@@ -1,6 +1,7 @@
 class AllProducts {
-    constructor() {
-        this.goods = goods;
+    constructor(fruits) {
+        this.goods = fruits;
+        console.log(this.goods);
     }
 
     render() {
@@ -64,6 +65,7 @@ class AllProducts {
         cartBtn.classList.add('cart-btn');
         cartBtn.src = './img/icons/cart-icon.svg';
         const a = document.createElement('a');
+        a.classList.add('cart-btn');
         a.href = './cart/cart.html';
         a.target = '_self';
         a.appendChild(cartBtn)
